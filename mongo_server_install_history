@@ -1,0 +1,49 @@
+ 1847  mongo
+ 1848  mongod
+ 1849  apt-get install mongodb-server
+ 1850  php -m
+ 1851  php -m | grep "mon"
+ 1852  php -m | grep "sys"
+ 1853  mongo
+ 1854  mongo --help
+ 1855  mongo 127.0.0.1:8089
+ 1856  rm -f /var/lib/mongodb/mongod.lock
+ 1857  mongo mongod -f /etc/mongodb.conf  --repair
+ 1858  mongo 127.0.0.1:8089
+ 1859  mongo
+ 1860  rm -f /var/lib/mongodb/mongod.lock
+ 1861  sudo mongod --repair
+ 1862  sudo start mongodb
+ 1863  sudo service mongodb start
+ 1864  sudo status mongodb
+ 1865  sudo service mongodb status
+ 1866  mongo
+ 1871  mkdir data
+ 1872  mkdir data/db
+ 1873  ll
+ 1874  mongo
+ 1875  sudo mongod --repair
+ 1876  sudo service mongodb start
+ 1877  sudo service mongodb status
+ 1878  nano /etc/mongodb.conf
+ 1879  ll
+ 1880  rm data/
+ 1881  rm -r data
+ 1882  ll
+ 1883  cd /var/lib/mongodb/
+ 1884  ll
+ 1889  mkdir data
+ 1890  cd data/
+ 1891  mkdir db
+ 1892  cd ../
+ 1896  ll
+ 1897  chown mongodb:nogroup data
+ 1898  ll
+ 1899  ll data/
+ 1902  chown mongodb:nogroup db
+ 1905  mongo
+ 1906  sudo service mongodb start
+ 1907  sudo service mongodb status
+ 1909  mongo
+ 1910  sudo find / -name "mongodb.log" -type f
+ 1911  tail -f /var/log/mongodb/mongodb.log | grep "exception"
